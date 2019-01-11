@@ -99,6 +99,11 @@ nav a {
     border-bottom: 1px dashed black;
 }
 
+.products-text {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +169,37 @@ nav a {
 }
 
 .about-card button:hover {
+    animation-name: fade;
+    animation-duration: 1.25s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.middle-content-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-card {
+    width: 375px;
+    margin: 15px 10px;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.products-card-text {
+    padding: 10px 0 15px 0;
+}
+
+.products-card button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px 20px;
+}
+
+.products-card button:hover {
     animation-name: fade;
     animation-duration: 1.25s;
     animation-iteration-count: 2;
