@@ -71,6 +71,39 @@ p {
     margin: 0 auto;
 }
 
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+nav a {
+	display: flex;
+    text-decoration: none;
+    color: black;
+	flex-grow: 1;
+	align-items: flex-end;
+}
+
+.splash {
+    margin: 40px 0 20px 0;
+}
+
+.about-text {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
+.products-text {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,12 +137,120 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 375px;
+    margin: 15px 10px;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.about-card-text {
+    padding: 10px 0 15px 0;
+}
+
+.about-card button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px 20px;
+}
+
+.about-card button:hover {
+    animation-name: fade;
+    animation-duration: 1.25s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.middle-content-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-card {
+    width: 375px;
+    margin: 15px 10px;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.products-card-text {
+    padding: 10px 0 15px 0;
+}
+
+.products-card button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px 20px;
+}
+
+.products-card button:hover {
+    animation-name: fade;
+    animation-duration: 1.25s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    from {background: white;
+          color: black;}
+    to {background: grey;
+        color: white;}
+  }
+
+.box.a {
+    background: teal;
+}
+
+.box.b {
+    background: gold;
+}
+
+.box.c {
+    background: cadetblue;
+}
+
+.box.d {
+    background: coral;
+}
+
+.box.e {
+    background: crimson;
+}
+
+.box.f {
+    background: forestgreen;
+}
+
+.box.g {
+    background: darkorchid;
+}
+
+.box.h {
+    background: hotpink;
+}
+
+.box.i {
+    background: indigo;
+}
+
+.box.j {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -124,6 +265,10 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.summary {
+    padding: 30px 20px 40px 20px;
 }
 
 footer {

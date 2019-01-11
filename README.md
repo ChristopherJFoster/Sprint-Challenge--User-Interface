@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    HTML tags give structure to the code by defining and differentiating elements, allowing browsers to display the code, and giving CSS a way to select different elements for styling.
+
+    Semantic HTML is a way of giving structure to HTML such that that structure has meaning. For example, a human being can read ```<h1>Lorem Ipsum</h1>``` and know that “Lorem Ipsum” is important on this page - probably the focus of the page. Furthermore, search engines can read semantic HTML and index the page accordingly. Adding to the ```<h1>Lorem Ipsum</h1>``` example, if we also have ```<h4>Baseball</h4>```, a search engine should know that a person searching for “baseball” might want to see the page, but probably not, since the ```<h4>``` tag is much lower in importance than the tag.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    An HTML element set to ```display: block``` will start on a new line, and will take up the entire width of its container (parent element). The block element will not allow other elements to be displayed on the same line (unless forced by ```float```, etc.). ```height``` and ```width``` properties will function properly on a block element.
+
+    An HTML element set to ```display: inline``` will only take up as much space as the element’s own width. Other content will “flow around” the inline element, if possible. ```height``` and ```width``` properties have no effect on an inline element.
 
 3. What are the 4 areas of the box model?
 
+    ```content```, ```padding```, ```border```, ```margin```
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    ```align-items: center``` works on the cross axis.
+
+    Assuming the ```flex-direction``` property is set to ```row``` (default) or ```row-reverse```, the cross axis is up/down. If ```flex-direction``` is set to ```column``` or ```column-reverse```, the cross axis is left/right.
+
 5. Explain why git is valuable to a team of developers.
+
+    Git allows multiple developers to work on the same codebase without without turning the code into a confusing mess. Git tracks changes to files in great detail and allows individual developers to set up changes (commit, push) that can later be added (pulled) into the main code after being reviewed. Finally, if a code change breaks a web page or application, the code can be carefully reverted back to the most recent version that worked while the broken code is debugged.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
