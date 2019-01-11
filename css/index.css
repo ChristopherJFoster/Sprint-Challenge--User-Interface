@@ -139,6 +139,30 @@ nav a {
     justify-content: center;
 }
 
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 375px;
+    margin: 15px 10px;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.about-card-text {
+    padding: 10px 0 15px 0;
+}
+
+.about-card button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 8px 20px;
+}
+
 .box.a {
     background: teal;
 }
@@ -193,8 +217,8 @@ nav a {
     padding-right: 0;
 }
 
-.summary-text {
-    padding: 20px 20px 40px 20px;
+.summary {
+    padding: 30px 20px 40px 20px;
 }
 
 footer {
